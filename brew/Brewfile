@@ -1,0 +1,8 @@
+cask 'discord'
+cask 'firefox'
+cask 'iterm2'
+cask 'messenger'
+cask 'steam'
+
+brew 'git'
+brew 'vim', args: ['with-python3']
