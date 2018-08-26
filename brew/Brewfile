@@ -3,6 +3,8 @@ cask 'firefox'
 cask 'iterm2'
 cask 'messenger'
 cask 'steam'
+cask 'the-unarchiver'
 
 brew 'git'
+brew 'unar'
 brew 'vim', args: ['with-python3']
