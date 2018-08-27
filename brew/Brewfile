@@ -7,4 +7,4 @@ cask 'the-unarchiver'
 
 brew 'git'
 brew 'unar'
-brew 'vim', args: ['with-python3']
+brew 'nvim'
