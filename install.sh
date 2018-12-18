@@ -16,8 +16,10 @@ setup_workspace() {
 }
 
 setup_nvim() {
-  curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  if [ ! -f "${HOME}/.local/share/nvim/site/autoload/plug.vim" ]; then
+    curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  fi
 }
 
 link_files() {
@@ -34,6 +36,9 @@ link_files() {
   ln -sf $(pwd)/nvim/ $home/.config
 }
 
+run_brew() {
+  brew bundle install --global -v
+}
 
 main() {
   local home
@@ -46,6 +51,8 @@ main() {
 
   setup_nvim
   link_files
+
+  run_brew
 }
 
 main
