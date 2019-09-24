@@ -1,5 +1,7 @@
 [alias]
 	st = status
+	co = checkout
+	ci = commit
 [user]
 	email = svidrio@gmail.com
 	name = vitreuz
