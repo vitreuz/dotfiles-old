@@ -1,3 +1,5 @@
+" Use '-' to enter explore
+nnoremap <silent> - :Explore<CR>
 
 " Use <ENTER> to save a file in NORMAL mode
 nnoremap <expr> <CR> wildmenumode() ? "<CR>" : ":w<CR>"
